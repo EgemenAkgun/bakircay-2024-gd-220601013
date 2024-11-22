@@ -14,6 +14,9 @@ This project is part of the Fall 2024 Game Development course at Bakırçay Univ
    - **Object Placement**: Only one object can be placed in the designated placement area at a time.  
 
 ---
+## My Email's for contact:
+ egemenakgunjob@gmail.com
+ 220601013@bakircay.edu.tr
 
 ## Gameplay Preview  
   
