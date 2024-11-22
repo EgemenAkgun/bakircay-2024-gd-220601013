@@ -19,12 +19,10 @@ This project is part of the Fall 2024 Game Development course at Bakırçay Univ
  220601013@bakircay.edu.tr
 
 
-https://github.com/user-attachments/assets/ad354eeb-0ad2-4761-86e9-7c3158391e35
-
 
 ## Gameplay Preview  
   
-
+https://github.com/user-attachments/assets/ad354eeb-0ad2-4761-86e9-7c3158391e35
 
 
 ---
