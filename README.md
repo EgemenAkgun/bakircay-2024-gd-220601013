@@ -1,5 +1,5 @@
 Game Link : https://egemenakgun.itch.io/bakircay-2024-gd-220601013
-MATCH GAME
+
 
 Bu proje, Bakırçay Üniversitesi 2024-2025 güz dönemi Oyun Geliştirme dersinde 220601013 numaralı öğrenci tarafından geliştirilen bir yazılım uygulamasıdır.
 
