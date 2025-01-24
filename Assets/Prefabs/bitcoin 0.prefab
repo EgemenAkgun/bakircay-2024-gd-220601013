@@ -145,8 +145,8 @@ GameObject:
   - component: {fileID: 7047081597621248026}
   - component: {fileID: 356673345244039921}
   - component: {fileID: -7215342627059090900}
-  - component: {fileID: 3813298294050096198}
-  - component: {fileID: 147294840878416810}
+  - component: {fileID: 3969907959546061427}
+  - component: {fileID: -8324590224799174775}
   m_Layer: 0
   m_Name: bitcoin 0
   m_TagString: Untagged
@@ -205,7 +205,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &3813298294050096198
+--- !u!114 &3969907959546061427
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -214,18 +214,27 @@ MonoBehaviour:
   m_GameObject: {fileID: 2913185113264172717}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0705a2b58dc8750489d5361bb990d322, type: 3}
+  m_Script: {fileID: 11500000, guid: 5654453ce53e71a44a77aa8782a57b6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &147294840878416810
-MonoBehaviour:
+--- !u!65 &-8324590224799174775
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2913185113264172717}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f1acb26b177e30847a712a33aab2e24d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}

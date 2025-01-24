@@ -2,43 +2,49 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-
 public class DraggableObject : MonoBehaviour
 {
     private Vector3 offset;
-    private float zCoord;
-    private bool isDragging = false;
+    public Vector3 startPosition; // Objeyi geri döndürmek için başlangıç pozisyonu
+    public ObjectID objectID; // Objenin kimlik bilgisi
 
-    void OnMouseDown()
+    private void Start()
     {
-        // Objeye tıklandığında, fare imleci ile olan mesafeyi hesapla
-        zCoord = Camera.main.WorldToScreenPoint(gameObject.transform.position).z;
-        offset = gameObject.transform.position - GetMouseWorldPos();
-        isDragging = true;
-    }
+        // Başlangıç pozisyonunu kaydet
+        startPosition = transform.position;
 
-    void OnMouseUp()
-    {
-        // Fare bırakıldığında, objenin yerini sabitle
-        isDragging = false;
-    }
-
-    void Update()
-    {
-        if (isDragging)
+        // ObjectID bileşenini al
+        objectID = GetComponent<ObjectID>();
+        if (objectID == null)
         {
-            // Objeyi fare imlecine doğru hareket ettir
-            Vector3 mousePosition = GetMouseWorldPos() + offset;
-            transform.position = mousePosition;
+            Debug.LogError("ObjectID bileşeni eksik! Obje: " + gameObject.name);
         }
     }
 
-    // Fare konumunu dünyada (world) almak için bir yardımcı fonksiyon
-    Vector3 GetMouseWorldPos()
+    private void OnMouseDown()
     {
-        Vector3 mousePoint = Input.mousePosition;
-        mousePoint.z = zCoord; // Kamera ile objenin arasındaki mesafeyi tut
-        return Camera.main.ScreenToWorldPoint(mousePoint);
+        // Fare ile objeyi sürükleme için ofseti hesapla
+        offset = transform.position - GetMouseWorldPosition();
+    }
+
+    private void OnMouseDrag()
+    {
+        // Objeyi fare imlecine göre hareket ettir
+        transform.position = GetMouseWorldPosition() + offset;
+    }
+
+    private Vector3 GetMouseWorldPosition()
+    {
+        Vector3 mouseScreenPosition = Input.mousePosition;
+        mouseScreenPosition.z = Camera.main.WorldToScreenPoint(transform.position).z;
+        return Camera.main.ScreenToWorldPoint(mouseScreenPosition);
+    }
+
+    private void OnMouseUp()
+    {
+        // Fare bırakıldığında işlemler
+        Debug.Log($"Obje bırakıldı: {objectID.id}, Şekil: {objectID.shape}");
     }
 }
+
 

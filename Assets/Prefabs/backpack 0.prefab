@@ -10,10 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 6517160537161570538}
   - component: {fileID: 1274568231169983415}
-  - component: {fileID: -7236835103699443352}
   - component: {fileID: -805047109569620500}
-  - component: {fileID: -6163276407247127979}
-  - component: {fileID: -1679093391809546216}
+  - component: {fileID: 4258562260791310148}
+  - component: {fileID: -2190117385282514693}
   m_Layer: 0
   m_Name: backpack 0
   m_TagString: Untagged
@@ -45,28 +44,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 565198784850387799}
   m_Mesh: {fileID: -2587485212497171513, guid: ea81727cdfbd38d4b82a8916d5896caa, type: 3}
---- !u!64 &-7236835103699443352
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 565198784850387799}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -2587485212497171513, guid: ea81727cdfbd38d4b82a8916d5896caa, type: 3}
 --- !u!54 &-805047109569620500
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -94,7 +71,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &-6163276407247127979
+--- !u!114 &4258562260791310148
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -103,21 +80,30 @@ MonoBehaviour:
   m_GameObject: {fileID: 565198784850387799}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0705a2b58dc8750489d5361bb990d322, type: 3}
+  m_Script: {fileID: 11500000, guid: 5654453ce53e71a44a77aa8782a57b6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &-1679093391809546216
-MonoBehaviour:
+--- !u!65 &-2190117385282514693
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 565198784850387799}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f1acb26b177e30847a712a33aab2e24d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &8219768179705372667
 GameObject:
   m_ObjectHideFlags: 0
